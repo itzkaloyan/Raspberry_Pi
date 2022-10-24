@@ -1,0 +1,1 @@
+/usr/bin/arm-linux-gnueabihf-g++ -g -rdynamic CMakeFiles/blink.dir/blink.cpp.o CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o -o blink  -lpthread 

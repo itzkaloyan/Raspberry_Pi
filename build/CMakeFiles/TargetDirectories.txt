@@ -1,0 +1,3 @@
+/home/andititan/code/build/CMakeFiles/rebuild_cache.dir
+/home/andititan/code/build/CMakeFiles/edit_cache.dir
+/home/andititan/code/build/CMakeFiles/blink.dir
