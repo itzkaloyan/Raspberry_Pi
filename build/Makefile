@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andititan/code
+CMAKE_SOURCE_DIR = /home/andititan/code/raspberry_pi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andititan/code/build
+CMAKE_BINARY_DIR = /home/andititan/code/raspberry_pi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andititan/code/build/CMakeFiles /home/andititan/code/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andititan/code/raspberry_pi/build/CMakeFiles /home/andititan/code/raspberry_pi/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andititan/code/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andititan/code/raspberry_pi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -250,32 +250,59 @@ WiringPi/wiringPi/wiringPi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.s
 .PHONY : WiringPi/wiringPi/wiringPi.c.s
 
-blink.o: blink.cpp.o
+motor.o: motor.cpp.o
 
-.PHONY : blink.o
+.PHONY : motor.o
 
 # target to build an object file
-blink.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/blink.cpp.o
-.PHONY : blink.cpp.o
+motor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/motor.cpp.o
+.PHONY : motor.cpp.o
 
-blink.i: blink.cpp.i
+motor.i: motor.cpp.i
 
-.PHONY : blink.i
+.PHONY : motor.i
 
 # target to preprocess a source file
-blink.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/blink.cpp.i
-.PHONY : blink.cpp.i
+motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/motor.cpp.i
+.PHONY : motor.cpp.i
 
-blink.s: blink.cpp.s
+motor.s: motor.cpp.s
 
-.PHONY : blink.s
+.PHONY : motor.s
 
 # target to generate assembly for a file
-blink.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/blink.cpp.s
-.PHONY : blink.cpp.s
+motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/motor.cpp.s
+.PHONY : motor.cpp.s
+
+steppermotor/src/StepperMotor.o: steppermotor/src/StepperMotor.cpp.o
+
+.PHONY : steppermotor/src/StepperMotor.o
+
+# target to build an object file
+steppermotor/src/StepperMotor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o
+.PHONY : steppermotor/src/StepperMotor.cpp.o
+
+steppermotor/src/StepperMotor.i: steppermotor/src/StepperMotor.cpp.i
+
+.PHONY : steppermotor/src/StepperMotor.i
+
+# target to preprocess a source file
+steppermotor/src/StepperMotor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.i
+.PHONY : steppermotor/src/StepperMotor.cpp.i
+
+steppermotor/src/StepperMotor.s: steppermotor/src/StepperMotor.cpp.s
+
+.PHONY : steppermotor/src/StepperMotor.s
+
+# target to generate assembly for a file
+steppermotor/src/StepperMotor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.s
+.PHONY : steppermotor/src/StepperMotor.cpp.s
 
 # Help Target
 help:
@@ -298,9 +325,12 @@ help:
 	@echo "... WiringPi/wiringPi/wiringPi.o"
 	@echo "... WiringPi/wiringPi/wiringPi.i"
 	@echo "... WiringPi/wiringPi/wiringPi.s"
-	@echo "... blink.o"
-	@echo "... blink.i"
-	@echo "... blink.s"
+	@echo "... motor.o"
+	@echo "... motor.i"
+	@echo "... motor.s"
+	@echo "... steppermotor/src/StepperMotor.o"
+	@echo "... steppermotor/src/StepperMotor.i"
+	@echo "... steppermotor/src/StepperMotor.s"
 .PHONY : help
 
 

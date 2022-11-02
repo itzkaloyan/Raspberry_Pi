@@ -10,7 +10,16 @@ int main()
     // StepperMotor object declaration
     StepperMotor sm;
 
-    sm.setGPIOutputs(7, 11, 13, 15);
+    // RPi GPIO | WiringPi
+    // -------------------
+    // GPIO 17  |    0
+    // GPIO 18  |    1
+    // GPIO 27  |    2
+    // GPIO 22  |    3
+    sm.setGPIOutputs(0, 1, 2, 3);
+
+    // NOTE: Before starting, the current position of the
+    // stepper motor corresponds to 0 degrees
 
     // Rotate of 90 degrees clockwise at 100% of speed
     sm.run(1, 90, 100);

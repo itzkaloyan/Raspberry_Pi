@@ -135,8 +135,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/andititan/code/build",
-		"source" : "/home/andititan/code"
+		"build" : "/home/andititan/code/raspberry_pi/build",
+		"source" : "/home/andititan/code/raspberry_pi"
 	},
 	"version" : 
 	{

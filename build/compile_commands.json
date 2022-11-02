@@ -1,27 +1,32 @@
 [
 {
-  "directory": "/home/andititan/code/build",
-  "command": "/usr/bin/arm-linux-gnueabihf-g++   -g -o CMakeFiles/blink.dir/blink.cpp.o -c /home/andititan/code/blink.cpp",
-  "file": "/home/andititan/code/blink.cpp"
+  "directory": "/home/andititan/code/raspberry_pi/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/blink.dir/motor.cpp.o -c /home/andititan/code/raspberry_pi/motor.cpp",
+  "file": "/home/andititan/code/raspberry_pi/motor.cpp"
 },
 {
-  "directory": "/home/andititan/code/build",
-  "command": "/usr/bin/arm-linux-gnueabihf-gcc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o -c /home/andititan/code/WiringPi/wiringPi/wiringPi.c",
-  "file": "/home/andititan/code/WiringPi/wiringPi/wiringPi.c"
+  "directory": "/home/andititan/code/raspberry_pi/build",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/wiringPi.c",
+  "file": "/home/andititan/code/raspberry_pi/WiringPi/wiringPi/wiringPi.c"
 },
 {
-  "directory": "/home/andititan/code/build",
-  "command": "/usr/bin/arm-linux-gnueabihf-gcc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o -c /home/andititan/code/WiringPi/wiringPi/softPwm.c",
-  "file": "/home/andititan/code/WiringPi/wiringPi/softPwm.c"
+  "directory": "/home/andititan/code/raspberry_pi/build",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softPwm.c",
+  "file": "/home/andititan/code/raspberry_pi/WiringPi/wiringPi/softPwm.c"
 },
 {
-  "directory": "/home/andititan/code/build",
-  "command": "/usr/bin/arm-linux-gnueabihf-gcc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o -c /home/andititan/code/WiringPi/wiringPi/softTone.c",
-  "file": "/home/andititan/code/WiringPi/wiringPi/softTone.c"
+  "directory": "/home/andititan/code/raspberry_pi/build",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softTone.c",
+  "file": "/home/andititan/code/raspberry_pi/WiringPi/wiringPi/softTone.c"
 },
 {
-  "directory": "/home/andititan/code/build",
-  "command": "/usr/bin/arm-linux-gnueabihf-gcc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o -c /home/andititan/code/WiringPi/wiringPi/piHiPri.c",
-  "file": "/home/andititan/code/WiringPi/wiringPi/piHiPri.c"
+  "directory": "/home/andititan/code/raspberry_pi/build",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/piHiPri.c",
+  "file": "/home/andititan/code/raspberry_pi/WiringPi/wiringPi/piHiPri.c"
+},
+{
+  "directory": "/home/andititan/code/raspberry_pi/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o -c /home/andititan/code/raspberry_pi/steppermotor/src/StepperMotor.cpp",
+  "file": "/home/andititan/code/raspberry_pi/steppermotor/src/StepperMotor.cpp"
 }
 ]

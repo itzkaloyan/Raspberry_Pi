@@ -3,7 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o"
   "CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o"
   "CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o"
-  "CMakeFiles/blink.dir/blink.cpp.o"
+  "CMakeFiles/blink.dir/motor.cpp.o"
+  "CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o"
   "blink"
   "blink.pdb"
 )

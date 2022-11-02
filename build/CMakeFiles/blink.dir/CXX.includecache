@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/andititan/code/blink.cpp
-iostream
--
+/home/andititan/code/raspberry_pi/motor.cpp
 wiringPi.h
+-
+steppermotor/include/StepperMotor.hpp
+/home/andititan/code/raspberry_pi/steppermotor/include/StepperMotor.hpp
+
+/home/andititan/code/raspberry_pi/steppermotor/include/StepperMotor.hpp
+vector
 -
 

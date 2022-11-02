@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andititan/code
+CMAKE_SOURCE_DIR = /home/andititan/code/raspberry_pi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andititan/code/build
+CMAKE_BINARY_DIR = /home/andititan/code/raspberry_pi/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/blink.dir/depend.make
@@ -76,90 +76,105 @@ include CMakeFiles/blink.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/blink.dir/flags.make
 
-CMakeFiles/blink.dir/blink.cpp.o: CMakeFiles/blink.dir/flags.make
-CMakeFiles/blink.dir/blink.cpp.o: ../blink.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/blink.dir/blink.cpp.o"
-	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blink.dir/blink.cpp.o -c /home/andititan/code/blink.cpp
+CMakeFiles/blink.dir/motor.cpp.o: CMakeFiles/blink.dir/flags.make
+CMakeFiles/blink.dir/motor.cpp.o: ../motor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/raspberry_pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/blink.dir/motor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blink.dir/motor.cpp.o -c /home/andititan/code/raspberry_pi/motor.cpp
 
-CMakeFiles/blink.dir/blink.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blink.dir/blink.cpp.i"
-	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andititan/code/blink.cpp > CMakeFiles/blink.dir/blink.cpp.i
+CMakeFiles/blink.dir/motor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blink.dir/motor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andititan/code/raspberry_pi/motor.cpp > CMakeFiles/blink.dir/motor.cpp.i
 
-CMakeFiles/blink.dir/blink.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blink.dir/blink.cpp.s"
-	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andititan/code/blink.cpp -o CMakeFiles/blink.dir/blink.cpp.s
+CMakeFiles/blink.dir/motor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blink.dir/motor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andititan/code/raspberry_pi/motor.cpp -o CMakeFiles/blink.dir/motor.cpp.s
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o: CMakeFiles/blink.dir/flags.make
 CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o: ../WiringPi/wiringPi/wiringPi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o -c /home/andititan/code/WiringPi/wiringPi/wiringPi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/raspberry_pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/wiringPi.c
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.i"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/WiringPi/wiringPi/wiringPi.c > CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/raspberry_pi/WiringPi/wiringPi/wiringPi.c > CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.i
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.s"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/WiringPi/wiringPi/wiringPi.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/raspberry_pi/WiringPi/wiringPi/wiringPi.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.s
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o: CMakeFiles/blink.dir/flags.make
 CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o: ../WiringPi/wiringPi/softPwm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o -c /home/andititan/code/WiringPi/wiringPi/softPwm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/raspberry_pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softPwm.c
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.i"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/WiringPi/wiringPi/softPwm.c > CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softPwm.c > CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.i
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.s"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/WiringPi/wiringPi/softPwm.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softPwm.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.s
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o: CMakeFiles/blink.dir/flags.make
 CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o: ../WiringPi/wiringPi/softTone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o -c /home/andititan/code/WiringPi/wiringPi/softTone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/raspberry_pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softTone.c
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.i"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/WiringPi/wiringPi/softTone.c > CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softTone.c > CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.i
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.s"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/WiringPi/wiringPi/softTone.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/raspberry_pi/WiringPi/wiringPi/softTone.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.s
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o: CMakeFiles/blink.dir/flags.make
 CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o: ../WiringPi/wiringPi/piHiPri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o -c /home/andititan/code/WiringPi/wiringPi/piHiPri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/raspberry_pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o -c /home/andititan/code/raspberry_pi/WiringPi/wiringPi/piHiPri.c
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.i"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/WiringPi/wiringPi/piHiPri.c > CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andititan/code/raspberry_pi/WiringPi/wiringPi/piHiPri.c > CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.i
 
 CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.s"
-	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/WiringPi/wiringPi/piHiPri.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andititan/code/raspberry_pi/WiringPi/wiringPi/piHiPri.c -o CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.s
+
+CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o: CMakeFiles/blink.dir/flags.make
+CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o: ../steppermotor/src/StepperMotor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andititan/code/raspberry_pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o -c /home/andititan/code/raspberry_pi/steppermotor/src/StepperMotor.cpp
+
+CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andititan/code/raspberry_pi/steppermotor/src/StepperMotor.cpp > CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.i
+
+CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andititan/code/raspberry_pi/steppermotor/src/StepperMotor.cpp -o CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.s
 
 # Object files for target blink
 blink_OBJECTS = \
-"CMakeFiles/blink.dir/blink.cpp.o" \
+"CMakeFiles/blink.dir/motor.cpp.o" \
 "CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o" \
 "CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o" \
 "CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o" \
-"CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o"
+"CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o" \
+"CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o"
 
 # External object files for target blink
 blink_EXTERNAL_OBJECTS =
 
-blink: CMakeFiles/blink.dir/blink.cpp.o
+blink: CMakeFiles/blink.dir/motor.cpp.o
 blink: CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o
 blink: CMakeFiles/blink.dir/WiringPi/wiringPi/softPwm.c.o
 blink: CMakeFiles/blink.dir/WiringPi/wiringPi/softTone.c.o
 blink: CMakeFiles/blink.dir/WiringPi/wiringPi/piHiPri.c.o
+blink: CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o
 blink: CMakeFiles/blink.dir/build.make
 blink: CMakeFiles/blink.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andititan/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable blink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andititan/code/raspberry_pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable blink"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/blink.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -172,6 +187,6 @@ CMakeFiles/blink.dir/clean:
 .PHONY : CMakeFiles/blink.dir/clean
 
 CMakeFiles/blink.dir/depend:
-	cd /home/andititan/code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andititan/code /home/andititan/code /home/andititan/code/build /home/andititan/code/build /home/andititan/code/build/CMakeFiles/blink.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/andititan/code/raspberry_pi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/andititan/code/raspberry_pi /home/andititan/code/raspberry_pi /home/andititan/code/raspberry_pi/build /home/andititan/code/raspberry_pi/build /home/andititan/code/raspberry_pi/build/CMakeFiles/blink.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/blink.dir/depend
 

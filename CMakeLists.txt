@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.0)
 project(blink)
 
 set(SOURCES
-    blink.cpp
     motor.cpp
     WiringPi/wiringPi/wiringPi.c 
     WiringPi/wiringPi/softPwm.c

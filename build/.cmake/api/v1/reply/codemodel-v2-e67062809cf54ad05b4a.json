@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "blink::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-blink-Debug-0ea23041258754d5d8f4.json",
+					"jsonFile" : "target-blink-Debug-d28e830096e4e6d2d467.json",
 					"name" : "blink",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/andititan/code/build",
-		"source" : "/home/andititan/code"
+		"build" : "/home/andititan/code/raspberry_pi/build",
+		"source" : "/home/andititan/code/raspberry_pi"
 	},
 	"version" : 
 	{

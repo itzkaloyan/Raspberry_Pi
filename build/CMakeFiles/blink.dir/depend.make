@@ -18,5 +18,9 @@ CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o: ../WiringPi/wiringPi/softTo
 CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o: ../WiringPi/wiringPi/wiringPi.c
 CMakeFiles/blink.dir/WiringPi/wiringPi/wiringPi.c.o: ../WiringPi/wiringPi/wiringPi.h
 
-CMakeFiles/blink.dir/blink.cpp.o: ../blink.cpp
+CMakeFiles/blink.dir/motor.cpp.o: ../motor.cpp
+CMakeFiles/blink.dir/motor.cpp.o: ../steppermotor/include/StepperMotor.hpp
+
+CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o: ../steppermotor/include/StepperMotor.hpp
+CMakeFiles/blink.dir/steppermotor/src/StepperMotor.cpp.o: ../steppermotor/src/StepperMotor.cpp
 
